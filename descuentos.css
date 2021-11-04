@@ -1,0 +1,52 @@
+* Orden de cada llamada CSS para buenas prácticas
+1. Posicionamiento
+2. Modelo de Caja (Box Model)
+3. Tipografía
+4. Visuales
+5. Otros
+*/
+:root{ /*Variables*/
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #201E1C;
+    --black: #201e1c;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+    
+}
+*{ /*Quitar configuraciones por defecto del navegador*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 100%; /*?para hacer uso del rem y no de px*/
+    font-family: 'Titillium Web', sans-serif; /*Font por defecto*/
+    /*font-family: 'Inter', sans-serif; */
+    scroll-behavior: smooth;
+    background-color: var(--secondary-blue);
+    text-align: center;
+    color: var(--just-white);
+    
+}
+header {
+    /*1.*/
+    position: relative; /*Para moverte desde el centro del objeto*/
+    /*2.*/
+    display: flex; /*Caja Flexible*/
+    flex-direction: column; /*Los objetos irán de arriba a abajo*/
+    justify-content: center;    
+    width: 100%;
+    min-width: 320px;
+    height: 100px;
+    /*3.*/
+    text-align: center;
+    /*4.*/
+}
+.form-2
+{
+    margin-top: 50px;
+}

@@ -13,7 +13,7 @@ function priceDiscount()
 {
     const input1 = document.getElementById("price")
     const price = parseInt(input1.value)
-    const input2 = document.getElementById("price")
+    const input2 = document.getElementById("discount")
     const discount = parseInt(input2.value)
     const priceDiscounted = descuento(price,discount)
     const paraph = document.getElementById("priceD")

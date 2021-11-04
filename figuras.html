@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="figuras.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet"> 
        
-    <title>Curso</title>
+    <title>Taller 1: JS</title>
 </head>
 <body>
     <header>
@@ -14,19 +18,19 @@
         <p>Este es el primer segmento del curso de JavaScript</p>
     </header>
     <section class="section1">
-        <h2>Inserte los datos correspondientes</h2>
+        <h2>Inserte los datos correspondientes</h2><br>
         <form action="">
-            <label for="">Inserte la medida de un lado del cuadrado:</label>
-            <input type="number" id="ladoc"/>
+            <h3>Inserte la medida de un lado del cuadrado: </h3>
+            <input type="number" id="ladoc"/><br>
             <button type="button" id="areac" onclick="calcularAreaCuad()">Calcular el área</button>
             <button type="button" id="perimetroc" onclick="calcularPerimetroCuad()">calcular el perímetro</button>
         </form>
-        <form action="">
-            <label for="">Inserte las medidas de los lados de un triángulo isósceles:</label>
+        <form action="" class="form-2">
+            <h3>Inserte las medidas de los lados de un triángulo isósceles: </h3></label><br>
             <label for="ladot1">Lado 1:</label>
             <input type="number" id="ladot1"/>
             <label for="ladot2">Lado 2:</label>
-            <input type="number" id="ladot2"/>
+            <input type="number" id="ladot2"/><br>
             <label for="baset">Base:</label>
             <input type="number" id="base"/>
             <button type="button" id="areac" onclick="calcularAreaT()">Calcular el área</button>

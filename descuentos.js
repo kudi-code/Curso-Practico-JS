@@ -17,5 +17,5 @@ function priceDiscount()
     const discount = parseInt(input2.value)
     const priceDiscounted = descuento(price,discount)
     const paraph = document.getElementById("priceD")
-    paraph.innerText = "El precio con descuento es: " + priceDiscounted
+    paraph.innerText = "El precio con descuento es: $" + priceDiscounted
 }

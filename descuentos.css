@@ -1,4 +1,4 @@
-* Orden de cada llamada CSS para buenas prácticas
+/* Orden de cada llamada CSS para buenas prácticas
 1. Posicionamiento
 2. Modelo de Caja (Box Model)
 3. Tipografía
@@ -46,7 +46,8 @@ header {
     text-align: center;
     /*4.*/
 }
-.form-2
+.form1
 {
-    margin-top: 50px;
+    margin-top: 10px;
+    line-height: 35px;
 }

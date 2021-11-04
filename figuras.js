@@ -60,3 +60,42 @@ function calcularAreaCuad()
     const area = areacuad(value)
     alert("El resultado es: " + area)
 }
+//  Triángulo
+function calcularPerimetroT()
+{
+    const input1 = document.getElementById("ladot1") //Jala todo el input
+    const value1 = parseInt(input1.value) //Jala el contenido del input
+    const input2 = document.getElementById("ladot2") //Jala todo el input
+    const value2 = parseInt(input2.value) //Jala el contenido del input
+    const base = document.getElementById("base") //Jala todo el input
+    const valueb = parseInt(base.value)  //Jala el contenido del input
+    const perimetro = value1 + value2 + valueb
+    if(value1!=value2)
+    {        
+        alert("weon ctm, ese triángulo no es isósceles, pero su perimetro es: " + perimetro)
+    }
+    else{
+        alert("El resultado es: " + perimetro)
+    }
+}
+function calcularAreaT()
+{
+    const input1 = document.getElementById("ladot1") //Jala todo el input
+    const value1 = parseInt(input1.value) //Jala el contenido del input
+    const input2 = document.getElementById("ladot2") //Jala todo el input
+    const value2 = parseInt(input2.value) //Jala el contenido del input
+    const base = document.getElementById("base") //Jala todo el input
+    const valueb = parseInt(base.value)  //Jala el contenido del input
+    const area = value1 + value2 + valueb
+    if(value1!=value2)
+    {
+        alert("weon ctm, ese triángulo no es isósceles")
+    }
+    else{
+        
+        const h = Math.sqrt((Math.pow(value1,2) - Math.pow(valueb/2,2)))     
+        alert("La altura es: "+h)   
+        const area = areat(valueb,h)
+        alert("El resultado es: " + area)
+    }
+}

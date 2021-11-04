@@ -1,36 +1,62 @@
 //Código del cuadrado
 console.group("Cuadrados")
-const cuad = 5;
-console.log("Los lado del cuadrado miden: " + cuad + "cm")
-const perimetroc = cuad*4;
-console.log("El perímetro de esta vaina es: " + perimetroc + "cm")
-const areacuad = cuad*cuad;
-console.log("El área de esta vaina es: " + areacuad + "cm")
+function perimetroc(cuad)
+{ 
+    return cuad*4 + " cm"
+}
+function areacuad(cuad)
+{ 
+    return cuad*cuad + " cm^2"
+}
 console.groupEnd()
 //Código del triángulo
 //*Identar: darle espacio a las líneas de código*/
 
 console.group("Triangulos")
-const ladot1 = 6;
-const ladot2 = 6;
-const baset = 8;
-const h = 5.5; //h = (baset/2 ^2 * lado^2)^2
-
-console.log("Los lados del triángulo son Lado 1: "+ ladot1 + " Lado 2: " + ladot2 + " base: " + baset + " altura: " +h)
-const perimetrot = ladot1 + ladot2 + baset
-console.log("El perímetro del triángulo es: "+ perimetrot)
-const areat = (baset * h) / 2
-console.log("El área del triángulo es: "+ areat)
+function perimetrot(ladot1,ladot2,baset) //h = (baset/2 ^2 * lado^2)^2
+{
+    return ladot1 + ladot2 + baset + " cm"
+}
+function areat(baset,h)
+{
+    return (baset * h) / 2 + " cm^2"
+}
 
 console.groupEnd()
 
 console.group("Circulos")
 //Radio
-const radioci = 15
-console.log("El radio del círculo es: "+ radioci)
-const diametroci = radioci *2
-console.log("El diámetro del círculo es: "+ diametroci)
-const perimetroci = radioci * 2 * Math.PI
-console.log("El perímetro del círculo es: "+ perimetroci)
+// const radioci = 15
+// console.log("El radio del círculo es: "+ radioci)
+// const diametroci = radioci *2
+// console.log("El diámetro del círculo es: "+ diametroci)
+// const perimetroci = radiosci * 2 * Math.PI
+// console.log("El perímetro del círculo es: "+ perimetroci)
+// const areaci = radioci * radioci * Math.PI
+// console.log("El área del círculo es: "+ areaci)
+
+function perimetroci(radioci)
+{
+    return radioci*2*Math.PI + " cm"
+}
+function areaci(radioci)
+{
+    return radioci*radioci*Math.PI + " cm^2"
+}
 
 console.groupEnd()
+
+//Interactuar con el HTML
+function calcularPerimetroCuad(){
+    const input = document.getElementById("ladoc") //Jala todo el input
+    const value = input.value //Jala el contenido del input
+    const perimetro = perimetroc(value)
+    alert("El resultado es: " + perimetro)
+}
+function calcularAreaCuad()
+{
+    const input = document.getElementById("ladoc") //Jala todo el input
+    const value = input.value //Jala el contenido del input
+    const area = areacuad(value)
+    alert("El resultado es: " + area)
+}
